@@ -7,7 +7,12 @@
   <style>
     .gallery {
       /* TODO: make 3-column grid */
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+
+
       gap: 10px;
+      
     }
     .gallery img {
       width: 100%;
@@ -17,6 +22,7 @@
     @media (max-width: 600px) {
       .gallery {
         /* TODO: change to 2-column grid */
+        grid-template-columns: repeat(2,1fr);
         
       }
     }

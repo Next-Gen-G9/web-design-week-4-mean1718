@@ -7,6 +7,8 @@
   <style>
     .container {
       /* TODO: Use flexbox row layout */
+      display: flex;
+      flex-direction: row;
       gap: 1rem;
       padding: 1rem;
     }
@@ -24,6 +26,7 @@
     @media (max-width: 600px) {
       .container {
         /* TODO: stack vertically on small screens */
+        flex-direction: column;
       }
     }
   </style>

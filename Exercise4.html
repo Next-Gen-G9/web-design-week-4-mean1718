@@ -9,7 +9,13 @@
       height: 100vh;
       display: grid;
       /* TODO: define grid-template-areas */
+      grid-template-areas:
+      "Header Header Header Header" 
+      "Sidebar main main ads"
+      "Footer Footer Footer Footer ";
+      grid-template-rows: auto 1fr auto;
       gap: 10px;
+      
     }
     header { background: #3498db; grid-area: header; }
     aside { background: #2ecc71; grid-area: sidebar; }
